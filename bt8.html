@@ -9,6 +9,7 @@
     <script>
         var a = [4, 8, -2, 56, -1, 12, 8, 6, 8, -2, 56, 7];
         var b = [];
+        
         for(var i=0; i < a.length; i++)
         {
             var count = 0;
@@ -22,6 +23,21 @@
                 b.push(a[i]);
             }            
         }  
+
+for(var i=0; i < b.length; i++)
+        {
+            var count2 = 0;
+            for(var j=i+1; j < b.length; j++)
+                if(b[j] == b[i])
+                {
+                    count2++;
+                }
+            if(count2 > 0)
+            {
+                b.splice(b[j], 1);
+            }            
+        }  
+
 
         document.write("Phần tử xuất hiện trên 2 lần: ", b);   
     </script>
