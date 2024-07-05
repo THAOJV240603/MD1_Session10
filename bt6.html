@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+    <script>
+        var a = [4, 8, -2, 56, -1, 12, 8, 6];
+        // var newA = [...a].sort(); // Một thực thể mới của mảng a được tạo và được sắp xếp       
+        // console.log(a);
+        // console.log(newA);
+   
+        for(var i = 0; i < a.length - 1; i++)
+        {
+            for(var j = i+1; j < a.length; j++)  /*So sánh, đổi chỗ trực tiếp 2 phần tử kề nhau*/
+            {
+                if(a[j] < a[i])
+                {
+                    var temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                    
+                }
+            }
+        }
+
+        console.log(a);
+    </script>
+</body>
+</html>

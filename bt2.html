@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm phần tử</title>
+</head>
+<body>
+    <script>
+        var a = [4, 8, "Hà Nội", 12, "Việt Nam", 6];
+        var b = prompt("Nhập giá trị muốn tìm!");
+        var check = false;
+
+        for (i = 0; i < a.length; i++)
+        {            
+            if (a[i] == b)
+            {
+                check = true;
+                break;
+            }
+        }
+
+        if (check == true)
+            {
+                console.log("Phần tử " + b + " nằm ở vị trí: " + (i+1));
+            }
+            else
+            {
+                console.log("Phần tử không tồn tại");
+            }
+
+    </script>
+</body>
+</html>

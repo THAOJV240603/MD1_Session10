@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Nhập số a:");
+        var b = prompt("Nhập số b");
+        var n = [];
+
+        for (var i=1; i<=a; i++)
+                {
+                    if(i %b == 0)
+                        {
+                        n.push(i);
+                        }
+                }
+        
+        if (n.length == 0)
+        {
+            console.log("Các số từ 1 đến " + a + " không chia hết cho " + b);
+            
+        }
+        else{
+            console.log("Các số từ 1 đến " + a + " chia hết cho " + b + " là: " + n);
+        }
+    </script>
+</body>
+</html>

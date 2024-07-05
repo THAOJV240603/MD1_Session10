@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số lần xuất hiện</title>
+</head>
+<body>
+    <script>
+        var a = [4, 8, 56, 12, 8, 6];
+        var b = prompt("Nhập số nguyên bất kỳ!");
+        var check = false;
+        var count = 0;
+        
+        for (i = 0; i < a.length; i++)
+        {            
+            if (a[i] == b)
+            {
+                check = true;
+                count += 1;
+            }
+        }
+
+        if (check == true)
+            {
+                console.log("Phần tử " + b + " xuất hiện " + count + " lần");
+            }
+            else
+            {
+                console.log("Phần tử không tồn tại");
+            }
+
+    </script>
+</body>
+</html>
